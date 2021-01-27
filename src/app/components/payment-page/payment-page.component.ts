@@ -27,7 +27,7 @@ export class PaymentPageComponent implements OnInit {
   public datesArr: any[] = [];
   public paymentComplete: boolean = false;
   public filePath: string = '';
-  public path: string = 'http://localhost:3000/api/order/get-receipt';
+  public path: string = 'https://angular-heroku-silip-b.herokuapp.com//api/order/get-receipt';
 
   constructor(private myShoppingService: ShoppingCartService, private myOrderServices: OrderService,
     private myRouter: Router) { }

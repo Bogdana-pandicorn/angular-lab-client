@@ -10,7 +10,7 @@ import { HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProductsService {
-  public myApi = 'http://localhost:3000/api/products/';
+  public myApi = 'https://angular-heroku-silip-b.herokuapp.com//api/products/';
   constructor(private http: HttpClient) {}
 
   public getAllProducts(): Observable<ProductModel[]> {

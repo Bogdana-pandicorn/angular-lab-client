@@ -8,7 +8,7 @@
             products</button>
     </div>
     <div class='products' id="productsDiv" *ngIf='searchStatus'>
-        <app-product *ngFor='let p of searchProducts' imageSrc="http://localhost:3000/api/products/image/{{p.img}}" productName={{p.name}}
+        <app-product *ngFor='let p of searchProducts' imageSrc="https://angular-heroku-silip-b.herokuapp.com//api/products/image/{{p.img}}" productName={{p.name}}
             productPrice={{p.price}} productId={{p._id}}></app-product>
             <h3 *ngIf='searchProducts.length === 0 && searchStatus'>No result !</h3>
     </div>
@@ -19,15 +19,15 @@
     <div class='products' id="productsDiv" *ngIf='!searchStatus'>
         <mat-tab-group>
             <mat-tab label="Evening Dresses">
-                <app-product *ngFor='let p of eveningProducts' imageSrc="http://localhost:3000/api/products/image/{{p.img}}"
+                <app-product *ngFor='let p of eveningProducts' imageSrc="https://angular-heroku-silip-b.herokuapp.com//api/products/image/{{p.img}}"
                     productName={{p.name}} productPrice={{p.price}} productId={{p._id}}></app-product>
             </mat-tab>
             <mat-tab label="Wedding dresses">
-                <app-product *ngFor='let p of weddingProducts' imageSrc="http://localhost:3000/api/products/image/{{p.img}}"
+                <app-product *ngFor='let p of weddingProducts' imageSrc="https://angular-heroku-silip-b.herokuapp.com//api/products/image/{{p.img}}"
                     productName={{p.name}} productPrice={{p.price}} productId={{p._id}}></app-product>
             </mat-tab>
             <mat-tab label="Accessories">
-                <app-product *ngFor='let p of accessoriesProducts' imageSrc="http://localhost:3000/api/products/image/{{p.img}}"
+                <app-product *ngFor='let p of accessoriesProducts' imageSrc="https://angular-heroku-silip-b.herokuapp.com//api/products/image/{{p.img}}"
                     productName={{p.name}} productPrice={{p.price}} productId={{p._id}}></app-product>
             </mat-tab>
         </mat-tab-group>

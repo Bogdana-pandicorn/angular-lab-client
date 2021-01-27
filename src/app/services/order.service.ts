@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class OrderService {
 
-  public myApi = 'http://localhost:3000/api/order/';
+  public myApi = 'https://angular-heroku-silip-b.herokuapp.com//api/order/';
   constructor(private http: HttpClient) { }
 
   public addOrder(order: OrderModel): Observable<any> {

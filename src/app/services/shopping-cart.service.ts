@@ -8,7 +8,7 @@ import { Cart } from '../models/cart';
   providedIn: 'root'
 })
 export class ShoppingCartService {
-  public myApi = 'http://localhost:3000/api/shopping/';
+  public myApi = 'https://angular-heroku-silip-b.herokuapp.com//api/shopping/';
   constructor(private http: HttpClient) { }
 
   public createCart(_id: any) {

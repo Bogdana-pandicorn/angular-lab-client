@@ -7,7 +7,7 @@ import { UserModel } from '../models/user';
   providedIn: 'root'
 })
 export class RegisterService {
-  public myApi = 'http://localhost:3000/api/user/';
+  public myApi = 'https://angular-heroku-silip-b.herokuapp.com//api/user/';
   constructor(private http: HttpClient) { }
 
   public checkForm(form: UserModel): Observable<UserModel> {

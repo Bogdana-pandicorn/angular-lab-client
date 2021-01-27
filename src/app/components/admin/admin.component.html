@@ -17,7 +17,7 @@
             <tr *ngFor='let p of products'>
                 <td>{{p.name}}</td>
                 <td>{{p.price}}</td>
-                <td><img src="http://localhost:3000/api/products/image/{{p.img}}" alt=''></td>
+                <td><img src="https://angular-heroku-silip-b.herokuapp.com//api/products/image/{{p.img}}" alt=''></td>
                 <td>
                     <button mat-raised-button (click)='goToEditProduct(p._id)'>Edit</button>
                 </td>

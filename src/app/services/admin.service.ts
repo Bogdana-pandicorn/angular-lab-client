@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class AdminService {
 
-  public myApi = 'http://localhost:3000/api/admin/';
+  public myApi = 'https://angular-heroku-silip-b.herokuapp.com//api/admin/';
 
   constructor(private http: HttpClient) { }
 
